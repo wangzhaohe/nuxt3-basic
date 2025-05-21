@@ -1,23 +1,36 @@
 //@+leo-ver=5-thin
 //@+node:swot.20250521205725.11: * @file app.vue
 //@+doc
-// 配置 element-plus 支持中文
 //@@c
 //@+others
 //@+node:swot.20250521205725.12: ** template
-//@@language javascript
+//@@language typescript
 <template lang="pug">
-    NuxtLayout
-        //- elementUI plus 支持中文
-        el-config-provider(:locale="zhCn")
+NuxtLayout
+    div
+        //- 这一行应该可以放在 layout 文件中，现在只是一个测试而已
+        el-button.mb-2(@click="toggle") Switch Language
+        p
+        el-config-provider(:locale="locale")
             NuxtPage
 </template>
 //@+node:swot.20250521205725.13: ** script
 //@@language typescript
 <script setup lang="ts">
 
-// import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import zhCn from 'element-plus/es/locale/lang/zh-cn'
+import en   from 'element-plus/es/locale/lang/en'
+
+const language = ref('zh-cn')
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const locale = computed(() => (
+    language.value === 'zh-cn' ? zhCn : en))
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const toggle = () => {
+    language.value = language.value === 'zh-cn' ? 'en' : 'zh-cn'
+}
 
 </script>
 //@-others
