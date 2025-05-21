@@ -16,8 +16,10 @@ export default defineNuxtConfig({
         '@nuxt/scripts',
         '@nuxt/ui',
         '@nuxt/fonts',
-        '@nuxt/eslint'
+        '@nuxt/eslint',
+        '@element-plus/nuxt'    // new
     ],
+    elementPlus: { /** Options */ },
     //@+others
     //@+node:swot.20250521115011.1: ** 1 关闭默认的 google 访问设置
     //@+doc
