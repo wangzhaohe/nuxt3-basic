@@ -14,11 +14,11 @@ export default defineNuxtConfig({
         '@nuxt/icon',
         '@nuxt/image',
         '@nuxt/scripts',
-        '@nuxt/ui',
+        '@nuxt/ui',                  // new
         '@nuxt/fonts',
         '@nuxt/eslint',
-        '@nuxtjs/tailwindcss',  // new
     ],
+    css: ['~/assets/css/main.css'],  // new
     //@+others
     //@+node:swot.20250522084410.2: ** 1 关闭默认的 google 访问设置
     //@+doc
@@ -35,14 +35,12 @@ export default defineNuxtConfig({
         provider: 'none', // 禁用默认字体提供商（如 Google Fonts）
     },
 
-    // Nuxt UI 就不会再尝试加载 Google Fonts
     ui: {
-        fonts: false
+        // Nuxt UI 就不会再尝试加载 Google Fonts
+        fonts: false,
     },
     //@+doc
     // ----
     //@-others
-});
-//@+doc
-// ----
+})
 //@-leo
