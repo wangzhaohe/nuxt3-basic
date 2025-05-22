@@ -1,5 +1,5 @@
 //@+leo-ver=5-thin
-//@+node:swot.20250521114411.1: * @file nuxt.config.ts
+//@+node:swot.20250522084400.1: * @file nuxt.config.ts
 //@+doc
 // [source,javascript,]
 // ----
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     ],
     elementPlus: { /** Options */ },
     //@+others
-    //@+node:swot.20250521115011.1: ** 1 关闭默认的 google 访问设置
+    //@+node:swot.20250522084400.2: ** 1 关闭默认的 google 访问设置
     //@+doc
     // [source,javascript,]
     // ----
