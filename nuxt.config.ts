@@ -40,6 +40,11 @@ export default defineNuxtConfig({
     },
     //@+doc
     // ----
+    //@+node:swot.20250522211905.1: ** 2 全局加载 css 文件 -- new
+    css: [
+        "~/assets/css/main.scss",
+        "~/assets/css/main.css",
+    ],
     //@-others
 });
 //@+doc

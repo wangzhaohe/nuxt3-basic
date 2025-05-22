@@ -1,0 +1,21 @@
+/*@+leo-ver=5-thin*/
+/*@+node:swot.20250522213957.1: * @file assets/css/main.css*/
+/*@@language css*/
+/* sass 不支持 @import 了 */
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* 引入字体《阿里巴巴普惠体》 -- new */
+@font-face {
+    font-family: "PuHuiTi-Thin";
+    src: url("/fonts/PuHuiTi-Thin.woff2") format("woff2"),
+         url("/fonts/PuHuiTi-Thin.woff") format("woff");
+    font-weight: 250;
+    font-display: swap;
+}
+
+/* tailwind 工具类来使用指定的字体，会被全局使用 */
+@theme {
+    --font-sans: "PuHuiTi-Thin", sans-serif;
+}
+/*@-leo*/
