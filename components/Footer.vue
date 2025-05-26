@@ -32,16 +32,16 @@
 
                     ul(class="space-y-2")
                         li
-                            NuxtLink(to="/" class="hover:text-white hover:underline")
+                            NuxtLink(to="/" class="link-hover")
                                 | Shop & Contact
                         li
-                            NuxtLink(to="/" class="hover:text-white hover:underline")
+                            NuxtLink(to="/" class="link-hover")
                                 | Return & Refund
                         li
-                            NuxtLink(to="/" class="hover:text-white hover:underline")
+                            NuxtLink(to="/" class="link-hover")
                                 | Online Store
                         li
-                            NuxtLink(to="/" class="hover:text-white hover:underline")
+                            NuxtLink(to="/" class="link-hover")
                                 | Terms & Conditions
                 //@+doc
                 // ----
@@ -57,13 +57,13 @@
 
                     ul.space-y-2
                         li
-                            NuxtLink(to="/" class="hover:text-white hover:underline")
+                            NuxtLink(to="/" class="link-hover")
                                 | Our Story
                         li
-                            NuxtLink(to="/" class="hover:text-white hover:underline")
+                            NuxtLink(to="/" class="link-hover")
                                 | Blog
                         li
-                            NuxtLink(to="/" class="hover:text-white hover:underline")
+                            NuxtLink(to="/" class="link-hover")
                                 | Contact Us
                 //@+doc
                 // ----
@@ -79,13 +79,13 @@
 
                     ul.space-y-2
                         li
-                            a(href="#" class="hover:text-white hover:underline")
+                            a(href="#" class="link-hover")
                                 | Facebook
                         li
-                            a(href="#" class="hover:text-white hover:underline")
+                            a(href="#" class="link-hover")
                                 | Instagram
                         li
-                            a(href="#" class="hover:text-white hover:underline")
+                            a(href="#" class="link-hover")
                                 | Twitter
                 //@+doc
                 // ----
@@ -146,7 +146,6 @@
 //@@c
 //@@language css
 <style scoped>
-
 </style>
 //@+doc
 // ----

@@ -1,8 +1,11 @@
 /*@+leo-ver=5-thin*/
-/*@+node:swot.20250522125539.1: * @file assets/css/main.css*/
+/*@+node:swot.20250526154252.1: * @file assets/css/main.css*/
 /*@@language css*/
-/*@+others*/
-/*@-others*/
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+/* 自定义 hover 效果的工具类 目前写在 vue 的 <style scoped> 中不支持 */
+@utility link-hover {
+    @apply hover:text-white hover:underline;
+}
 /*@-leo*/
