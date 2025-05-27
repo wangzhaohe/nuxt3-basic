@@ -1,5 +1,5 @@
 //@+leo-ver=5-thin
-//@+node:swot.20250522084241.1: * @file nuxt.config.ts
+//@+node:swot.20250527181548.1: * @file nuxt.config.ts
 //@+doc
 // [source,javascript,]
 // ----
@@ -9,7 +9,9 @@
 export default defineNuxtConfig({
     compatibilityDate: '2025-05-15',
     devtools: { enabled: true },
-
+    future: {
+       compatibilityVersion: 4,
+    },
     modules: [
         '@nuxt/icon',
         '@nuxt/image',
@@ -19,7 +21,7 @@ export default defineNuxtConfig({
         '@nuxt/eslint'
     ],
     //@+others
-    //@+node:swot.20250522084241.2: ** 1 关闭默认的 google 访问设置
+    //@+node:swot.20250527181548.2: ** 1 关闭默认的 google 访问设置
     //@+doc
     // [source,javascript,]
     // ----
@@ -40,6 +42,23 @@ export default defineNuxtConfig({
     },
     //@+doc
     // ----
+    //@+node:swot.20250527181725.1: ** 2 nitro 支持顶层 await
+    //@@language typescript
+    nitro: {
+        esbuild: {
+            options: {
+                target: 'es2022', // 支持顶层 await
+            },
+        }
+    },
+
+
+    //@+doc
+    // In server/utils/db.ts:
+    //
+    //     const knexfile = await import(knexfilePath);
+    //
+    // 要想支持这种顶层 await，则需要配置 es2022
     //@-others
 });
 //@+doc
