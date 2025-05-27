@@ -1,5 +1,5 @@
 //@+leo-ver=5-thin
-//@+node:swot.20250522084241.1: * @file nuxt.config.ts
+//@+node:swot.20250527064512.1: * @file nuxt.config.ts
 //@+doc
 // [source,javascript,]
 // ----
@@ -16,10 +16,11 @@ export default defineNuxtConfig({
         '@nuxt/scripts',
         '@nuxt/ui',
         '@nuxt/fonts',
-        '@nuxt/eslint'
+        '@nuxt/eslint',
+        '@nuxtjs/sitemap',  // new
     ],
     //@+others
-    //@+node:swot.20250522084241.2: ** 1 关闭默认的 google 访问设置
+    //@+node:swot.20250527064512.2: ** 1 关闭默认的 google 访问设置
     //@+doc
     // [source,javascript,]
     // ----
