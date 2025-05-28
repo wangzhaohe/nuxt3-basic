@@ -4,6 +4,10 @@
 //@@c
 //@+others
 //@+node:swot.20250521205725.12: ** template
+//@+doc
+// [source,typescript]
+// ----
+//@@c
 //@@language typescript
 <template lang="pug">
 NuxtLayout
@@ -14,7 +18,13 @@ NuxtLayout
         el-config-provider(:locale="locale")
             NuxtPage
 </template>
+//@+doc
+// ----
 //@+node:swot.20250521205725.13: ** script
+//@+doc
+// [source,typescript]
+// ----
+//@@c
 //@@language typescript
 <script setup lang="ts">
 
@@ -33,6 +43,8 @@ const toggle = () => {
 }
 
 </script>
+//@+doc
+// ----
 //@-others
 //@@language javascript
 //@-leo

@@ -4,6 +4,11 @@
 //@@c
 //@+others
 //@+node:swot.20250521205725.8: ** template
+//@+doc
+// [source,typescript]
+// ----
+//@@c
+//@@language typescript
 <template lang="pug">
 div
     el-button(@click="ElMessage('hello')") button
@@ -24,10 +29,19 @@ div
     el-table.mb-1(:data="[]")
     el-pagination(:total="100")
 </template>
+//@+doc
+// ----
 //@+node:swot.20250521205725.9: ** script
+//@+doc
+// [source,typescript]
+// ----
+//@@c
+//@@language typescript
 <script setup lang="ts">
     const date = ref('')
 </script>
+//@+doc
+// ----
 //@-others
 //@@language javascript
 //@-leo
