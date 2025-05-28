@@ -139,17 +139,6 @@
 <script setup lang="ts"></script>
 //@+doc
 // ----
-//@+node:swot.20250523151314.10: ** style
-//@+doc
-// [source,scss]
-// ----
-//@@c
-//@@language css
-<style scoped>
-</style>
-//@+doc
-// ----
-//
 //@-others
 //@@language javascript
 

@@ -1,5 +1,11 @@
 /*@+leo-ver=5-thin*/
 /*@+node:swot.20250526154252.1: * @file assets/css/main.css*/
+/*@+doc*/
+/*
+[source,scss]
+----
+*/
+/*@@c*/
 /*@@language css*/
 @import "tailwindcss";
 @import "@nuxt/ui";
@@ -8,4 +14,8 @@
 @utility link-hover {
     @apply hover:text-white hover:underline;
 }
+/*@+doc*/
+/*
+----
+*/
 /*@-leo*/

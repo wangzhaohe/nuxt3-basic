@@ -5,6 +5,11 @@
 //@@c
 //@+others
 //@+node:swot.20250523171027.2: ** template
+//@+doc
+// [source,scss]
+// ----
+//@@c
+//@@language xml
 <template lang="pug">
 UApp
     //@+others
@@ -153,7 +158,14 @@ UApp
     // ----
     //@-others
 </template>
+//@+doc
+// ----
 //@+node:swot.20250523171027.6: ** script
+//@+doc
+// [source,scss]
+// ----
+//@@c
+//@@language xml
 <script setup lang="ts">
 //@+others
 //@+node:swot.20250523171027.7: *3* ref var
@@ -233,14 +245,6 @@ const saveCookieSettings = () => {
 // ----
 //@-others
 </script>
-
-//@+node:swot.20250523171027.10: ** style
-//@+doc
-// [source,scss]
-// ----
-//@@c
-<style lang="scss" scoped>
-</style>
 //@+doc
 // ----
 //@-others
