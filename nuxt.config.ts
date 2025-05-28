@@ -43,6 +43,10 @@ export default defineNuxtConfig({
     //@+doc
     // ----
     //@+node:swot.20250527181725.1: ** 2 nitro 支持顶层 await
+    //@+doc
+    // [source,typescript]
+    // ----
+    //@@c
     //@@language typescript
     nitro: {
         esbuild: {
@@ -51,9 +55,9 @@ export default defineNuxtConfig({
             },
         }
     },
-
-
     //@+doc
+    // ----
+    //
     // In server/utils/db.ts:
     //
     //     const knexfile = await import(knexfilePath);

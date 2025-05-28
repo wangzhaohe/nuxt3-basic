@@ -1,5 +1,11 @@
 //-@+leo-ver=5-thin
 //-@+node:swot.20250527181843.1: * @file server/utils/db.ts
+//-@+doc
+//- Get database config from knexfile.js.
+//-
+//- [source,typescript]
+//- ----
+//-@@c
 //-@@language typescript
 import knex from 'knex';
 import { fileURLToPath } from 'url'
@@ -12,7 +18,6 @@ const knexfile = await import(knexfilePath);
 const env = (process.env.NODE_ENV || 'development') as keyof typeof knexfile.default;
 
 export default knex(knexfile.default[env]);
-
 //-@+doc
-//- Get database config from knexfile.js.
+//- ----
 //-@-leo

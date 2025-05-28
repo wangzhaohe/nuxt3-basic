@@ -1,6 +1,10 @@
-//@+leo-ver=5-thin
-//@+node:swot.20250527181251.1: * @file shared/types/user.d.ts
-//@@language javascript
+//-@+leo-ver=5-thin
+//-@+node:swot.20250527181251.1: * @file shared/types/user.d.ts
+//-@+doc
+//- [source,typescript]
+//- ----
+//-@@c
+//-@@language typescript
 // 可以自己定义 User 接口
 export interface User {
     id: number
@@ -9,4 +13,6 @@ export interface User {
     created_at: string
     updated_at: string
 }
-//@-leo
+//-@+doc
+//- ----
+//-@-leo

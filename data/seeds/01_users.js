@@ -1,6 +1,15 @@
-//@+leo-ver=5-thin
-//@+node:swot.20250527181421.1: * @file data/seeds/01_users.js
-//@@language javascript
+//-@+leo-ver=5-thin
+//-@+node:swot.20250527181421.1: * @file data/seeds/01_users.js
+//-@+doc
+//- 操作命令
+//-
+//-     knex seed:run 执行所有
+//-     knex seed:run --specific 01_users.js 执行单个
+//-
+//- [source,typescript]
+//- ----
+//-@@c
+//-@@language typescript
 export async function seed(knex) {
 
     await knex('users').del();
@@ -14,9 +23,6 @@ export async function seed(knex) {
         { id: 3, username: 'User3', password: '123456', created_at: now, updated_at: now }
     ]);
 }
-
-//@+doc
-// knex seed:run 执行所有
-//
-// knex seed:run --specific 01_users.js 执行单个
-//@-leo
+//-@+doc
+//- ----
+//-@-leo
