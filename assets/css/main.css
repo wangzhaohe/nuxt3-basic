@@ -1,6 +1,17 @@
 /*@+leo-ver=5-thin*/
 /*@+node:swot.20250526153924.1: * @file assets/css/main.css*/
 /*@@language css*/
+/*@+doc*/
+/*
+[source,scss]
+----
+*/
+/*@@c*/
+/*@@language xml*/
 @import "tailwindcss";
 @import "@nuxt/ui";
+/*@+doc*/
+/*
+----
+*/
 /*@-leo*/
