@@ -25,9 +25,7 @@ export default defineNuxtConfig({
     // ----
     //@@c
     //@@language javascript
-    /* 因为默认会使用 google 的字体和图标，
-       但是 node.js 不会走代理，可能访问不到 google 网站
-    */
+    // 因为默认会使用 google 的字体和图标，但是 node.js 不会走代理，可能访问不到 google 网站。
 
     // @nuxt/fonts 不使用 google fonts
     fonts: {
