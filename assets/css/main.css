@@ -1,5 +1,11 @@
 /*@+leo-ver=5-thin*/
 /*@+node:swot.20250522213957.1: * @file assets/css/main.css*/
+/*@+doc*/
+/*
+[source,scss]
+----
+*/
+/*@@c*/
 /*@@language css*/
 /* sass 不支持 @import 了 */
 @import "tailwindcss";
@@ -18,4 +24,8 @@
 @theme {
     --font-sans: "PuHuiTi-Thin", sans-serif;
 }
+/*@+doc*/
+/*
+----
+*/
 /*@-leo*/

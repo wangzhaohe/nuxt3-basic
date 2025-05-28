@@ -2,7 +2,14 @@
 /*@+node:swot.20250522210741.1: * @file assets/css/main.scss*/
 /*@@language css*/
 /*@+others*/
-/*@+node:swot.20250522211440.1: ** reset browser default css*/
+/*@+node:swot.20250522211440.1: ** reset browser default css -> 若用 tailwindcss 则不用设置默认值*/
+/*@+doc*/
+/*
+[source,scss]
+----
+*/
+/*@@c*/
+/*@@language css*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -21,6 +28,9 @@ a {
 ul, ol {
     list-style: none;
 }
-
+/*@+doc*/
+/*
+----
+*/
 /*@-others*/
 /*@-leo*/
