@@ -5,12 +5,24 @@
 //@@c
 //@+others
 //@+node:swot.20250527195648.3: ** template
+//@+doc
+// [source,typescript]
+// ----
+//@@c
+//@@language typescript
 <template lang="pug">
 ul
     li(v-for="item in user" :key="index")
         | {{ item }}
 </template>
+//@+doc
+// ----
 //@+node:swot.20250527195648.2: ** script
+//@+doc
+// [source,typescript]
+// ----
+//@@c
+//@@language typescript
 <script setup lang="ts">
 
 const route = useRoute();
@@ -21,6 +33,8 @@ const slug = route.params.slug;
 const { data: user } = await useFetch(`/api/users/${slug}`);
 
 </script>
+//@+doc
+// ----
 //@-others
 //@@language javascript
 //@-leo

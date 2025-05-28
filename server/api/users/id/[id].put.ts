@@ -1,6 +1,12 @@
-//@+leo-ver=5-thin
-//@+node:swot.20250527223814.1: * @file server/api/users/id/[id].put.ts
-//@@language javascript
+//-@+leo-ver=5-thin
+//-@+node:swot.20250527223814.1: * @file server/api/users/id/[id].put.ts
+//-@+doc
+//- http put :3000/api/users/id/5 username=swotpp
+//-
+//- [source,typescript]
+//- ----
+//-@@c
+//-@@language typescript
 // 更新用户，如果没有 slug 则增加 slug
 // 此路由多加了一个 /id/，就是为了 /api/users/[slug].get.ts 区分开
 
@@ -46,7 +52,6 @@ export default defineEventHandler(async (event) => {
 
     return updatedUser[0];
 });
-
-//@+doc
-// http put :3000/api/users/id/5 username=swotpp
-//@-leo
+//-@+doc
+//- ----
+//-@-leo

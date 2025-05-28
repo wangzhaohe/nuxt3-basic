@@ -1,6 +1,10 @@
-//@+leo-ver=5-thin
-//@+node:swot.20250527195548.1: * @file shared/types/user.d.ts
-//@@language javascript
+//-@+leo-ver=5-thin
+//-@+node:swot.20250527195548.1: * @file shared/types/user.d.ts
+//-@+doc
+//- [source,typescript]
+//- ----
+//-@@c
+//-@@language typescript
 // 更新 User 接口，添加 slug 字段
 
 export interface User {
@@ -11,4 +15,6 @@ export interface User {
     created_at: string
     updated_at: string
 }
-//@-leo
+//-@+doc
+//- ----
+//-@-leo

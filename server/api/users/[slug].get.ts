@@ -1,6 +1,12 @@
-//@+leo-ver=5-thin
-//@+node:swot.20250527210134.1: * @file server/api/users/[slug].get.ts
-//@@language javascript
+//-@+leo-ver=5-thin
+//-@+node:swot.20250527210134.1: * @file server/api/users/[slug].get.ts
+//-@+doc
+//- http :3000/api/users/user1-b53304f3
+//-
+//- [source,typescript]
+//- ----
+//-@@c
+//-@@language typescript
 // get user by slug
 import type { User } from '~/types/user'
 
@@ -16,8 +22,6 @@ export default defineEventHandler(async (event) => {
     }
     return user;
 });
-
-//@+doc
-// http :3000/api/users/user1-b53304f3
-//
-//@-leo
+//-@+doc
+//- ----
+//-@-leo

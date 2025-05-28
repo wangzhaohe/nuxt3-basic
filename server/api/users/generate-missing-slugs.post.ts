@@ -1,6 +1,10 @@
-//@+leo-ver=5-thin
-//@+node:swot.20250527222331.1: * @file server/api/users/generate-missing-slugs.post.ts
-//@@language javascript
+//-@+leo-ver=5-thin
+//-@+node:swot.20250527222331.1: * @file server/api/users/generate-missing-slugs.post.ts
+//-@+doc
+//- [source,typescript]
+//- ----
+//-@@c
+//-@@language typescript
 // Add slug for all users
 import { v4 as uuidv4 } from 'uuid'
 import type { User } from '~/types/user'
@@ -44,13 +48,14 @@ export default defineEventHandler(async (event) => {
         })
     }
 })
-
-//@+doc
-// 值得注意的是，虽然这个 api 不接收请求体数据，但它确实修改了数据库状态。
-//
-// 根据 RESTful 原则，修改资源状态的操作通常使用 POST、PUT 或 PATCH 方法，而不是 GET。
-//
-// GET 请求应该是幂等的（多次调用不会产生不同结果）。
-//
-// 因此，尽管技术上可以使用 GET，但保持为 POST 可能更符合 API 设计最佳实践，因为这个操作会修改数据库状态。
-//@-leo
+//-@+doc
+//- ----
+//-
+//- 值得注意的是，虽然这个 api 不接收请求体数据，但它确实修改了数据库状态。
+//-
+//- 根据 RESTful 原则，修改资源状态的操作通常使用 POST、PUT 或 PATCH 方法，而不是 GET。
+//-
+//- GET 请求应该是幂等的（多次调用不会产生不同结果）。
+//-
+//- 因此，尽管技术上可以使用 GET，但保持为 POST 可能更符合 API 设计最佳实践，因为这个操作会修改数据库状态。
+//-@-leo
