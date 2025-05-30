@@ -7,9 +7,17 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "migration.status": "knex migrate:status",
+    "migration.new": "knex migrate:make",
+    "migrate": "knex migrate:latest",
+    "seed.new": "knex seed:make",
+    "seed": "knex seed:run",
+    "start": "ts-node src/run.ts",
+    "allowMembersToCreateAnyArticle": "ts-node src/updateMemberRole.ts"
   },
   "dependencies": {
+    "@casl/ability": "^6.7.3",
     "@nuxt/eslint": "1.4.1",
     "@nuxt/fonts": "0.11.4",
     "@nuxt/icon": "1.13.0",
@@ -20,6 +28,7 @@
     "bcryptjs": "^3.0.2",
     "better-sqlite3": "^11.10.0",
     "eslint": "^9.0.0",
+    "jsonwebtoken": "^9.0.2",
     "knex": "^3.1.0",
     "nuxt": "^3.17.3",
     "pug": "^3.0.3",
