@@ -43,8 +43,7 @@ export async function seed(knex) {
             name: 'member',  // 会员用户
             permissions: JSON.stringify([  // <2>
                 { action: 'read', subject: 'Article' },
-                { action: 'manage', subject: 'Article', conditions: { authorId: '${user.id}' }  // <3>
-                }
+                { action: 'manage', subject: 'Article', conditions: { authorId: '${user.id}' }}  // <3>
             ])
         },
         {
@@ -60,7 +59,7 @@ export async function seed(knex) {
     //-
     //- <1> 上面代码不指定 id 也是可以的，但是下面的代码在插入用户时使用了指定死的 roleId。所以这里还是指定 user 的 id 为 1 和 2 为好，以免数据库自增 id 后对应不上了。
     //- <2> permissions 为文本字符串
-    //- <3> 怎么解释这个模板字符串？ 后面有源码
+    //- <3> 怎么解析这个模板字符串？ 后面有源码
     //-@-others
 };
 //-@+doc
