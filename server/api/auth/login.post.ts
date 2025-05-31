@@ -3,9 +3,9 @@
 //-@+doc
 //- Use httpie test:
 //-
-//-     http :3000/api/auth/login nomo=admin pasvoto=123456
-//-     http :3000/api/auth/login nomo=author pasvoto=123456
-//-     http :3000/api/auth/login nomo=swot pasvoto=123456
+//-     http :3000/api/auth/login nomo=admin1 pasvoto=123456
+//-     http :3000/api/auth/login nomo=member1 pasvoto=123456
+//-     http :3000/api/auth/login nomo=normal1 pasvoto=123456
 //-
 //- [source,typescript]
 //- ----
