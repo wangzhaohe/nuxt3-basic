@@ -35,9 +35,9 @@ export async function seed(knex) {
     const hashedPassword = await bcrypt.hash("123456", 10);
 
     await knex('users').insert([
-        { id: 1, username: 'admin' , password: hashedPassword, created_at: now, updated_at: now, roleId: 1 },
-        { id: 2, username: 'author', password: hashedPassword, created_at: now, updated_at: now, roleId: 2 },
-        { id: 3, username: 'swot'  , password: hashedPassword, created_at: now, updated_at: now, roleId: 3 },
+        { id: 1, username: 'admin1' , password: hashedPassword, created_at: now, updated_at: now, roleId: 1 },
+        { id: 2, username: 'member1', password: hashedPassword, created_at: now, updated_at: now, roleId: 2 },
+        { id: 3, username: 'normal1', password: hashedPassword, created_at: now, updated_at: now, roleId: 3 },
     ]);
     //-@+doc
     //- ----
