@@ -9,24 +9,19 @@ export async function findUserBy(where: Partial<Record<keyof User, any>>)
                                             : Promise<User | undefined> {
     const result = await db<User>('users')  // <1>
         .innerJoin('roles', 'users.roleId', 'roles.id')
-        .select('users.id', 'users.username', 'roles.permissions', { role: 'roles.name' })  // <2>
+        .select('users.id', 'users.username',
+                'roles.permissions', { role: 'roles.name' })  // <2>
         .where(function () {
             for (const key in where) {
-                this.andWhere(
-                    `users.${key}`,
-                    where[key as keyof typeof where]
-                )
+                this.andWhere(`users.${key}`, where[key as keyof typeof where])
             }
         })
         .first()
-
-    if (!result) {
-        return undefined
-    }
+    if (!result)
+        return undefined;
     const { permissions, ...user } = result  // <1>
     console.log('2025-05-30-214139 user:', user);
     user.permissions = interpolate(permissions, { user })   // <3>
-
     return user
 }
 //-@+doc
